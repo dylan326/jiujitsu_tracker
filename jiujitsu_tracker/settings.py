@@ -81,16 +81,6 @@ WSGI_APPLICATION = 'jiujitsu_tracker.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jiujitsu_tracker',
-        'USER': 'dylan326',
-        'PASSWORD': 'Ut87Ut87',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
-}
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
