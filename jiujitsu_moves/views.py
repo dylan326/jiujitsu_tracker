@@ -6,3 +6,7 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, "moves/index.html")
+
+    
+def addmove(request):
+    return render(request, 'moves/addmove.html')
