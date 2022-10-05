@@ -23,3 +23,7 @@ class classtracker(models.Model):
 
 class positions(models.Model):
     position_name = models.CharField(max_length=64)
+    
+
+class testtable(models.Model):
+    testvar = models.CharField(max_length=64)
