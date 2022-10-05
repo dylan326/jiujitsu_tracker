@@ -6,7 +6,7 @@ from django.db import models
 class moves(models.Model):
     name = models.CharField(max_length=64)
     description = models.CharField(max_length=500)
-    position = models.CharField(max_length=64)
+    position_id = models.IntegerField()
 
 
 class bjjmoves(models.Model):
@@ -19,3 +19,7 @@ class classtracker(models.Model):
     date = models.DateField()
     hours = models.CharField(max_length=64)
     number_of_rolls = models.IntegerField()
+    
+
+class positions(models.Model):
+    position_name = models.CharField(max_length=64)
