@@ -1,0 +1,12 @@
+
+#add_move_form, #add_move_form_header {
+ width: 80%;
+ margin: auto;
+}
+
+#add_move_submit {
+  width: 50%;
+  float: left;
+  background-color: #6495ED;
+  color: white;
+}
