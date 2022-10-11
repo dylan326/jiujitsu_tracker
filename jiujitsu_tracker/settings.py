@@ -56,7 +56,7 @@ ROOT_URLCONF = 'jiujitsu_tracker.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "jiujitsu_moves/templates/moves"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
