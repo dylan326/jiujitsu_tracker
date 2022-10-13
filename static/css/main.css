@@ -1,0 +1,35 @@
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+
+#footer {
+  background-color: #9932CC;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+   
+            /* Footer height */
+}
+
+#footer_links_row {
+  padding-top: 5px;
+}
+
+
+.bg {
+   background: url("/static/images/Hero_home_web.jpg") 50% 0 no-repeat fixed;
+   color: white;
+   height: 1000px;
+   width: 100%;
+   background-size: cover;
+   
+   }
