@@ -1,7 +1,7 @@
 
 header {
     border: 1px solid black;
-    background-color: #000000;
+    background-color: #8B4513;
     color: white;
     text-align: center; 
     height: 60px; 
@@ -18,21 +18,3 @@ header {
 }
 
 
-
-
-footer {
-    margin-top: auto;
-    border: 1px solid black;
-    background-color: #9932CC;
-    color: white;
-    text-align: center;
-     position: absolute;
-     bottom: 0;
-     width: 100%;
-     overflow: hidden;
-}
-
-#nav_content_footer {
-  margin-top: 15px;
-
-}
