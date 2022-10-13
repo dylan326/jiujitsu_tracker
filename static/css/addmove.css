@@ -1,8 +1,10 @@
 
-#add_move_form, #add_move_form_header {
+#add_move_form_header, #add_move_form {
  width: 80%;
  margin: auto;
+ padding-top: 30px;
 }
+
 
 #add_move_submit {
   width: 50%;
