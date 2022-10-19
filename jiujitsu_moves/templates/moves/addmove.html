@@ -4,12 +4,12 @@
 	<h1 id="add_move_form_header">Add Move of the Day</h1><br>
   <form id="add_move_form" action="{% url 'add-move' %}" method="POST" enctype="multipart/form-data">
       {% csrf_token %}
-      {{form.move_name.label_tag}}<br>
-      {{ form.move_name }}<br>
-      {{form.move_description.label_tag}}<br>
-      {{ form.move_description }}<br>
-			{{form.move_position.label_tag}}<br>
-			{{ form.move_position }}<br>
+      {{form.name.label_tag}}<br>
+      {{ form.name }}<br>
+      {{form.description.label_tag}}<br>
+      {{ form.description }}<br>
+			{{form.position_id.label_tag}}<br>
+			{{ form.position_id }}<br>
       <input id="add_move_submit" type="submit" value="Submit" class="form-control">
   </form>
 {% endblock %}

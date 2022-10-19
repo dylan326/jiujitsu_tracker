@@ -18,17 +18,19 @@ def addmove(request):
         form = NameForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
-            
-            form.save()
+            #failing here
+            form.save() 
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return HttpResponseRedirect('add-move?move_added=true')
+            return HttpResponse("Move Saved!")
+        
+        else:
+            #need to print errors here?
+            return HttpResponse("Move not Saved!")
             
     else:
         form = NameForm()
-        
-    print(list(request.POST.items()))
     
-    return render(request, 'moves/addmove.html', {'form': form})
+        return render(request, 'moves/addmove.html', {'form': form})
         
