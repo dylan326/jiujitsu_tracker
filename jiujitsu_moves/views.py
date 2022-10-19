@@ -18,7 +18,7 @@ def addmove(request):
         form = NameForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
-            #failing here
+            
             form.save() 
             # process the data in form.cleaned_data as required
             # ...
