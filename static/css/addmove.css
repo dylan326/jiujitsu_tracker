@@ -12,3 +12,17 @@
   background-color: #6495ED;
   color: white;
 }
+
+#move_saved_true {
+  color: green;
+  margin-left: 10%; 
+  padding-top: 20px; 
+  margin-bottom: -20px;
+}
+
+#move_saved_false {
+  color: red;
+  margin-left: 10%; 
+  padding-top: 20px; 
+  margin-bottom: -20px;
+}

@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+{% if request.GET.saved == "true" %}
+	<p id="move_saved_true">Move saved successfully!</p>
+{% elif request.GET.saved == "false" %}
+    <p id="move_saved_false">Not Saved, try again.  If error persists contact support</p>
+{% endif %}
+
 	<h1 id="add_move_form_header">Add Move of the Day</h1><br>
   <form id="add_move_form" action="{% url 'add-move' %}" method="POST" enctype="multipart/form-data">
       {% csrf_token %}
