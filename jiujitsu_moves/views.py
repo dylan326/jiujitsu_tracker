@@ -23,11 +23,11 @@ def addmove(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            return HttpResponse("Move Saved!")
+            return HttpResponseRedirect("/add-move?saved=true")
         
         else:
-            #need to print errors here?
-            return HttpResponse("Move not Saved!")
+            
+            return HttpResponseRedirect("/add-move?saved=false")
             
     else:
         form = NameForm()
