@@ -1,8 +1,8 @@
 from django.contrib import admin
 from .models import *
 
-admin.site.register(moves)
-admin.site.register(bjjmoves)
-admin.site.register(classtracker)
-admin.site.register(positions)
+admin.site.register(Moves)
+admin.site.register(BjjMoves)
+admin.site.register(ClassTracker)
+admin.site.register(Positions)
 # Register your models here.

@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 
-from .forms import NameForm
+from .forms import AddMoveForm
 
 # Create your views here.
 
@@ -11,11 +11,11 @@ def index(request):
     return render(request, "moves/index.html")
 
 
-def addmove(request):
+def add_move(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:
-        form = NameForm(request.POST)
+        form = AddMoveForm(request.POST)
         # check whether it's valid:
         if form.is_valid():
             
@@ -30,7 +30,7 @@ def addmove(request):
             return HttpResponseRedirect("/add-move?saved=false")
             
     else:
-        form = NameForm()
+        form = AddMoveForm()
     
         return render(request, 'moves/addmove.html', {'form': form})
         
