@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
-
+from .models import Moves
 from .forms import AddMoveForm
 
 # Create your views here.
@@ -33,4 +33,13 @@ def add_move(request):
         form = AddMoveForm()
     
         return render(request, 'moves/addmove.html', {'form': form})
+        
+        
+def search_moves(request): 
+    
+    move_list = Moves.objects.values()
+    
+    return render(request, 'moves/searchmove.html', {'move_list': move_list})
+    
+    
         

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Search Moves</h1>
+{% for move in move_list %}
+  {{ move.name }}<br>
+{% endfor %}
+
+{% endblock %}
