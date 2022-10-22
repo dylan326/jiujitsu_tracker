@@ -1,9 +1,47 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<h1>Search Moves</h1>
-{% for move in move_list %}
-  {{ move.name }}<br>
-{% endfor %}
 
+{% for move in move_list %}
+{% comment %} 
+  {{ move.name }}<br>
+{% endcomment %} 
+{% endfor %}
+<div style = "width: 80%; margin: auto; margin-top: 30px;"  id="container">
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    <h2><u>OFFENCE</u></h2>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    <h2><u>DEFENSE</u></h2>
+  </div>
+</div>
+<div class="row" style="margin-top: 50px;">
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    
+      <h3 class="offence_tiles">Half Guard</h3>
+      <h3 class="offence_tiles">Full Guard</h3><br>
+      <h3 class="offence_tiles">Open/X Guard</h3>
+      <h3 class="offence_tiles">Butterfly Guard</h3><br>
+      <h3 class="offence_tiles">Butterfly Guard</h3>
+      <h3 class="offence_tiles">Worm Guard</h3><br>
+      <h3 class="offence_tiles">Side Control</h3>
+      <h3 class="offence_tiles">Mount</h3><br>
+      <h3 class="offence_tiles">Back</h3>
+    
+    
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12">
+    <h3 class="defense_tiles">Half Guard</h3>
+    <h3 class="defense_tiles">Full Guard</h3><br>
+    <h3 class="defense_tiles">Open/X Guard</h3>
+    <h3 class="defense_tiles">Butterfly Guard</h3><br>
+    <h3 class="defense_tiles">Butterfly Guard</h3>
+    <h3 class="defense_tiles">Worm Guard</h3><br>
+    <h3 class="defense_tiles">Side Control</h3>
+    <h3 class="defense_tiles">Mount</h3><br>
+    <h3 class="defense_tiles">Back</h3>
+  </div>
+</div>
+</div>
 {% endblock %}

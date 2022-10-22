@@ -33,3 +33,23 @@ html, body {
    background-size: cover;
    
    }
+   
+  .offence_tiles {
+    border: 1px solid black;
+     border-radius: 5px; 
+    display: inline-block; 
+    padding: 20px; 
+    cursor: pointer; 
+    background-color: #9932CC; 
+    color: white;
+  }
+  
+  .defense_tiles {
+    border: 1px solid black; 
+    border-radius: 5px; 
+    display: inline-block; 
+    padding: 20px; 
+    cursor: pointer; 
+    background-color: #6495ED;
+     color: white;
+  }
