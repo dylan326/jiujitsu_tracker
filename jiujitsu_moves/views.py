@@ -42,4 +42,7 @@ def search_moves(request):
     return render(request, 'moves/searchmove.html', {'move_list': move_list})
     
     
+def half_guard_moves(request):
+    
+    return render(request, "moves/halfguardmoves.html")
         

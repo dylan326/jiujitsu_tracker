@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("#half_guard").on("click", function() {
-      console.log('half guard clicked');
+      var url = $("#half_guard").attr("data-url");
+      document.location.href = url;
   });
 });
