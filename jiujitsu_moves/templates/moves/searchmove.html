@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-{% load static %}
 {% block content %}
 
 {% for move in move_list %}
@@ -19,7 +18,7 @@
 <div class="row" style="margin-top: 50px;">
   <div class="col-lg-6 col-md-6 col-sm-12">
     
-      <h3 class="offence_tiles">Half Guard</h3>
+      <h3 class="offence_tiles" id="half_guard" data-url="{% url 'half-guard-moves' %}">Half Guard</h3>
       <h3 class="offence_tiles">Full Guard</h3><br>
       <h3 class="offence_tiles">Open/X Guard</h3>
       <h3 class="offence_tiles">Butterfly Guard</h3><br>
