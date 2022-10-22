@@ -7,6 +7,7 @@ class Moves(models.Model):
     name = models.CharField(max_length=64)
     description = models.CharField(max_length=500)
     position_id = models.IntegerField()
+    is_offence = models.BooleanField(default=True)
 
 
 class BjjMoves(models.Model):
