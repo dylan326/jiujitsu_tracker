@@ -53,3 +53,19 @@ html, body {
     background-color: #6495ED;
      color: white;
   }
+  
+  #half_g_off_col, .half_g_off_links {
+    text-align: center;
+  }
+  
+  .half_g_off_boxes {
+    border: 1px solid black; 
+    padding: 10px; 
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  
+  #half_g_off_img {
+    height: 100%;
+  }
