@@ -44,8 +44,13 @@ def search_moves(request):
     
 def half_guard_moves(request):
 
-    half_guard_moves = Moves.objects.values('name').filter(position_id=1, is_offence=1)
+    half_guard_moves = Moves.objects.all().values('id', 'name').filter(position_id=1, is_offence=1)
 
     return render(request, "moves/halfguardmoves.html", {'half_guard_moves': half_guard_moves})
+    
+
+def move_desc_page(request, id):
+    
+    return render(request, 'moves/moveresult.html', {"id": id})
 
         
