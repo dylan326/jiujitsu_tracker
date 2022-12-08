@@ -1,13 +1,17 @@
 from django.db import models
 
 # Create your models here.
+class Positions(models.Model):
+    position_name = models.CharField(max_length=64)
 
+    def __str__(self):
+        return self.position_name
 
 class Moves(models.Model):
     name = models.CharField(max_length=64)
     description = models.CharField(max_length=500)
-    position_id = models.IntegerField()
     is_offence = models.BooleanField(default=True)
+    position = models.ForeignKey(Positions, on_delete=models.CASCADE, default=1)
 
 
 class BjjMoves(models.Model):
@@ -20,9 +24,18 @@ class ClassTracker(models.Model):
     date = models.DateField()
     hours = models.CharField(max_length=64)
     number_of_rolls = models.IntegerField()
-    
 
-class Positions(models.Model):
-    position_name = models.CharField(max_length=64)
+
+class testfk(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
+class calltestfk(models.Model):
+    age = models.CharField(max_length=64)
+    dob = models.CharField(max_length=64)
+    name = models.ForeignKey(testfk, on_delete=models.CASCADE)
+
 
 
