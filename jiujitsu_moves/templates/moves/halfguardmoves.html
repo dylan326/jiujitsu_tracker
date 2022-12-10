@@ -3,15 +3,22 @@
 {% block content %}
 <div class="row">
 	<div id="half_g_off_col" class="col-lg-4 col-md-4 col-sm-12">
+		{% if is_offence == 1 %}
 		<h2><u>Half Guard Moves - Offence</u></h2><br><br>
-{% for half_guard_move in half_guard_moves %}
+		{% else %}
+		<h2><u>Half Guard Moves - Defense </u></h2><br><br>
+		{% endif %}
+		{% for half_guard_move in half_guard_moves %}
 
-<div class="half_g_off_boxes"><h6 class="half_g_off_links"><a href="/move-desc/{{ half_guard_move.id}}">{{ half_guard_move.name }}</a></h6></div><br>
-{% endfor %}
-</div>
+		<div class="half_g_off_boxes">
+			<h6 class="half_g_off_links"><a href="/move-desc/{{ half_guard_move.id}}">{{ half_guard_move.name }}</a>
+			</h6>
+		</div><br>
+		{% endfor %}
+	</div>
 	<div class="col-lg-8 col-md-8 col-sm-12">
 		<img id="half_g_off_img" src="{% static "images/HalfGuard.png" %}" alt="halfguardimg" />
 	</div>
 </div>
-	
+
 {% endblock %}
