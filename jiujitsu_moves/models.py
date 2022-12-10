@@ -26,16 +26,7 @@ class ClassTracker(models.Model):
     number_of_rolls = models.IntegerField()
 
 
-class testfk(models.Model):
-    name = models.CharField(max_length=50)
 
-    def __str__(self):
-        return self.name
-
-class calltestfk(models.Model):
-    age = models.CharField(max_length=64)
-    dob = models.CharField(max_length=64)
-    name = models.ForeignKey(testfk, on_delete=models.CASCADE)
 
 
 
