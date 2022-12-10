@@ -51,8 +51,8 @@ def half_guard_moves(request):
 
 def move_desc_page(request, id):
     
-    move = Moves.objects.values().filter(id=id)
-    #return render(request, 'moves/moveresult.html', {"id": id})
+    move = Moves.objects.all().filter(id=id).select_related('position')
+   
     return render(request, "moves/moveresult.html", {'move': move})
     
         
